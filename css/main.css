@@ -1,0 +1,167 @@
+* {
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+body {
+	max-width: 90%;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation:portrait) {
+	
+	.menuHeader {
+		display: block; 
+		float: right;
+	}
+	.menu {
+		display: block;
+	}
+}
+header {
+	padding-bottom: 5px;
+	border-bottom: 2px solid gray;
+	margin-bottom: 20px;
+}
+.logoHeader {
+	float: left;
+	width: 100px;
+}
+.menuHeader {
+	float: right;
+	padding-top: 30px;
+}
+.hov01:hover {
+	color: green;
+}
+.hov02:hover {
+	color: green;
+}
+.hov03:hover {
+	color: green;
+}
+.hov04:hover {
+	color: green;
+}
+.hov05:hover {
+	color: green;
+}
+.hov06:hover {
+	color: green;
+}
+.menu {
+	display: inline-block;
+	font-size: 16px;
+	margin-right: 5px;
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.menulink {
+	text-decoration: none;
+	font-size: 20px;
+	color: inherit;
+}
+h2 {
+	color: red;
+}
+.itemsRow:nth-child(odd) {
+display: flex;
+flex-direction: row;
+
+}
+.itemsRow:nth-child(even) {
+display: flex;
+flex-direction: row-reverse;
+
+}
+.firstImg{
+	display: inline-block;
+	/*width: 20%;*/
+	padding: 10px;
+}
+.intext {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+
+}
+.itemsRow {
+	list-style: none;
+
+}
+.table {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+	padding-top: 20px;
+}
+ul {
+	padding: 0;
+}
+.tableItems {
+	display: inline-block;
+	width: 30%;
+	border: 2px solid grey;
+	margin-bottom: 30px;
+	padding: 10px;
+}
+.property {
+	float: left;
+	margin: 10px;
+}
+p {
+	width: 100%;
+	font-size: 16px;
+}
+footer {
+	border-top: 2px solid grey;
+	margin-top: 20px;
+}
+.logoFooter {
+	float: left;
+	width: 50px;
+	padding-top: 10px;
+}
+address {
+	float: right;
+	font-size: 16px;
+	padding-top: 10px;
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/**
+	adaptive
+*/
+main {
+	max-width: 100%
+}
+
+img {
+	max-width: 100% !important;
+}
+
+@media screen and (max-width: 1200px) {
+	.property {
+    	float: none;
+    	margin: 10px auto;
+    	display: block;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.menulink {
+		font-size: 14px
+	}
+	.tableItems {
+		width: 40%
+	}
+	.ProductRow .itemsRow {
+    	flex-direction: column;
+	}
+}
